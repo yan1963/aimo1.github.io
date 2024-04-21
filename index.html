@@ -2,12 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=http://[240e:306:d82:b9f2:3127:ad32:f962:2700]/index.html">
-    <title>Page Redirect</title>
-</head>
-<body>
+	
+    
+    <title>Local Image and Redirect</title>
     <script>
-        window.location.href = 'http://[240e:306:d82:b9f2:3127:ad32:f962:2700]/index.html';
+        // 延时跳转的函数
+        function redirect() {
+            setTimeout(function() {
+                window.location.href = 'http://[240e:306:d82:b9f2:3127:ad32:f962:2700]/index.html'; // 要跳转的URL
+            }, 5000); // 延时5秒
+        }
     </script>
+</head>
+<body onload="redirect()">
+	<table>
+  <tr>
+    <td>小武钓鱼来了   来关注吧！</td>
+  </tr>
+</table>
+    <img src="Background3.jpg" alt="Local Image">
+	<img src="Background2.jpg" alt="Local Image">
+	<img src="Background4.jpg" alt="Local Image">
+	<br>
+	<img src="Background5.jpg" alt="Local Image">
+	<img src="Background6.jpg" alt="Local Image">
+	<img src="Background7.jpg" alt="Local Image">
+	
 </body>
 </html>
